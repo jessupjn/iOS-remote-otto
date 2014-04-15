@@ -38,8 +38,19 @@
   CGRect rect = CGRectMake(screen.size.width/2 - w/2, 60, w, 100);
   
   WITMicButton* witButton = [[WITMicButton alloc] initWithFrame:rect];
-  [self.view addSubview:witButton];
+  [[self.view viewWithTag:1] addSubview:witButton];
+  [[self.view viewWithTag:1] bringSubviewToFront:[self.view viewWithTag:2]];
 
+  UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft)];
+  [swipeGesture setDirection:UISwipeGestureRecognizerDirectionLeft];
+  [[self.view viewWithTag:1] addGestureRecognizer:swipeGesture];
+  
+  swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight)];
+  [swipeGesture setDirection:UISwipeGestureRecognizerDirectionRight];
+  [[self.view viewWithTag:2] addGestureRecognizer:swipeGesture];
+  
+  UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight)];
+  [[self.view viewWithTag:2] addGestureRecognizer:tapGesture];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,15 +59,30 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void) swipeLeft
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+  [[self.view viewWithTag:2] setHidden:false];
+  
+  CGRect newFrame = [self.view viewWithTag:1].frame;
+  newFrame.origin.x = -160;
+  
+  [UIView animateWithDuration:0.2 animations:^{
+    [self.view viewWithTag:1].frame = newFrame;
+    [self.view viewWithTag:2].alpha = 0.7;
+  }];
 }
-*/
+
+- (void) swipeRight
+{
+  CGRect newFrame = [self.view viewWithTag:1].frame;
+  newFrame.origin.x = 0;
+  
+  [UIView animateWithDuration:0.2 animations:^{
+    [self.view viewWithTag:1].frame = newFrame;
+    [self.view viewWithTag:2].alpha = 0;
+  } completion:^(BOOL finished) {
+    [[self.view viewWithTag:2] setHidden:true];
+  }];
+}
 
 @end
