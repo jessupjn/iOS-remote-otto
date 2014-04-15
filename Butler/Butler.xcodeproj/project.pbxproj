@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044282E218FDAA0800B8E6C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E118FDAA0800B8E6C1 /* Foundation.framework */; };
+		044282E418FDAA0800B8E6C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E318FDAA0800B8E6C1 /* CoreGraphics.framework */; };
+		044282E618FDAA0800B8E6C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E518FDAA0800B8E6C1 /* UIKit.framework */; };
+		044282EC18FDAA0800B8E6C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044282EA18FDAA0800B8E6C1 /* InfoPlist.strings */; };
+		044282EE18FDAA0800B8E6C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044282ED18FDAA0800B8E6C1 /* main.m */; };
+		044282F218FDAA0800B8E6C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044282F118FDAA0800B8E6C1 /* AppDelegate.m */; };
+		044282F418FDAA0800B8E6C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044282F318FDAA0800B8E6C1 /* Images.xcassets */; };
+		044282FB18FDAA0800B8E6C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282FA18FDAA0800B8E6C1 /* XCTest.framework */; };
+		044282FC18FDAA0800B8E6C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E118FDAA0800B8E6C1 /* Foundation.framework */; };
+		044282FD18FDAA0800B8E6C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E518FDAA0800B8E6C1 /* UIKit.framework */; };
+		0442830518FDAA0800B8E6C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0442830318FDAA0800B8E6C1 /* InfoPlist.strings */; };
+		0442830718FDAA0800B8E6C1 /* ButlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442830618FDAA0800B8E6C1 /* ButlerTests.m */; };
+		0442831418FDAD2800B8E6C1 /* iPhone-ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442831318FDAD2800B8E6C1 /* iPhone-ViewController.xib */; };
+		0442831618FDAD5000B8E6C1 /* iPad-ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442831518FDAD5000B8E6C1 /* iPad-ViewController.xib */; };
+		0442831F18FDB3D800B8E6C1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442831E18FDB3D800B8E6C1 /* MainViewController.m */; };
+		0442832118FDB93400B8E6C1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0442832018FDB93400B8E6C1 /* AVFoundation.framework */; };
+		0442832318FDB93900B8E6C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0442832218FDB93900B8E6C1 /* MobileCoreServices.framework */; };
+		0442832518FDB94800B8E6C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0442832418FDB94800B8E6C1 /* SystemConfiguration.framework */; };
+		98A9148C5B694EC09E072F83 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E3967537A4CC280958A72 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044282FE18FDAA0800B8E6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044282D618FDAA0800B8E6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044282DD18FDAA0800B8E6C1;
+			remoteInfo = Butler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044282DE18FDAA0800B8E6C1 /* Butler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Butler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044282E118FDAA0800B8E6C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		044282E318FDAA0800B8E6C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		044282E518FDAA0800B8E6C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		044282E918FDAA0800B8E6C1 /* Butler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Butler-Info.plist"; sourceTree = "<group>"; };
+		044282EB18FDAA0800B8E6C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		044282ED18FDAA0800B8E6C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		044282EF18FDAA0800B8E6C1 /* Butler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Butler-Prefix.pch"; sourceTree = "<group>"; };
+		044282F018FDAA0800B8E6C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		044282F118FDAA0800B8E6C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		044282F318FDAA0800B8E6C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		044282F918FDAA0800B8E6C1 /* ButlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044282FA18FDAA0800B8E6C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0442830218FDAA0800B8E6C1 /* ButlerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ButlerTests-Info.plist"; sourceTree = "<group>"; };
+		0442830418FDAA0800B8E6C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0442830618FDAA0800B8E6C1 /* ButlerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButlerTests.m; sourceTree = "<group>"; };
+		0442831318FDAD2800B8E6C1 /* iPhone-ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "iPhone-ViewController.xib"; sourceTree = "<group>"; };
+		0442831518FDAD5000B8E6C1 /* iPad-ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "iPad-ViewController.xib"; sourceTree = "<group>"; };
+		0442831D18FDB3D800B8E6C1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0442831E18FDB3D800B8E6C1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0442832018FDB93400B8E6C1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0442832218FDB93900B8E6C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0442832418FDB94800B8E6C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		615EB1548F27461996EE70C7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D54E3967537A4CC280958A72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044282DB18FDAA0800B8E6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0442832518FDB94800B8E6C1 /* SystemConfiguration.framework in Frameworks */,
+				0442832318FDB93900B8E6C1 /* MobileCoreServices.framework in Frameworks */,
+				0442832118FDB93400B8E6C1 /* AVFoundation.framework in Frameworks */,
+				044282E418FDAA0800B8E6C1 /* CoreGraphics.framework in Frameworks */,
+				044282E618FDAA0800B8E6C1 /* UIKit.framework in Frameworks */,
+				044282E218FDAA0800B8E6C1 /* Foundation.framework in Frameworks */,
+				98A9148C5B694EC09E072F83 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044282F618FDAA0800B8E6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044282FB18FDAA0800B8E6C1 /* XCTest.framework in Frameworks */,
+				044282FD18FDAA0800B8E6C1 /* UIKit.framework in Frameworks */,
+				044282FC18FDAA0800B8E6C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044282D518FDAA0800B8E6C1 = {
+			isa = PBXGroup;
+			children = (
+				044282E718FDAA0800B8E6C1 /* Butler */,
+				0442830018FDAA0800B8E6C1 /* ButlerTests */,
+				044282E018FDAA0800B8E6C1 /* Frameworks */,
+				044282DF18FDAA0800B8E6C1 /* Products */,
+				615EB1548F27461996EE70C7 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		044282DF18FDAA0800B8E6C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044282DE18FDAA0800B8E6C1 /* Butler.app */,
+				044282F918FDAA0800B8E6C1 /* ButlerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044282E018FDAA0800B8E6C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0442832418FDB94800B8E6C1 /* SystemConfiguration.framework */,
+				0442832218FDB93900B8E6C1 /* MobileCoreServices.framework */,
+				0442832018FDB93400B8E6C1 /* AVFoundation.framework */,
+				044282E118FDAA0800B8E6C1 /* Foundation.framework */,
+				044282E318FDAA0800B8E6C1 /* CoreGraphics.framework */,
+				044282E518FDAA0800B8E6C1 /* UIKit.framework */,
+				044282FA18FDAA0800B8E6C1 /* XCTest.framework */,
+				D54E3967537A4CC280958A72 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		044282E718FDAA0800B8E6C1 /* Butler */ = {
+			isa = PBXGroup;
+			children = (
+				044282F018FDAA0800B8E6C1 /* AppDelegate.h */,
+				044282F118FDAA0800B8E6C1 /* AppDelegate.m */,
+				0442831D18FDB3D800B8E6C1 /* MainViewController.h */,
+				0442831E18FDB3D800B8E6C1 /* MainViewController.m */,
+				0442831018FDAA1A00B8E6C1 /* ViewControllers */,
+				044282F318FDAA0800B8E6C1 /* Images.xcassets */,
+				044282E818FDAA0800B8E6C1 /* Supporting Files */,
+			);
+			path = Butler;
+			sourceTree = "<group>";
+		};
+		044282E818FDAA0800B8E6C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				044282E918FDAA0800B8E6C1 /* Butler-Info.plist */,
+				044282EA18FDAA0800B8E6C1 /* InfoPlist.strings */,
+				044282ED18FDAA0800B8E6C1 /* main.m */,
+				044282EF18FDAA0800B8E6C1 /* Butler-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0442830018FDAA0800B8E6C1 /* ButlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0442830618FDAA0800B8E6C1 /* ButlerTests.m */,
+				0442830118FDAA0800B8E6C1 /* Supporting Files */,
+			);
+			path = ButlerTests;
+			sourceTree = "<group>";
+		};
+		0442830118FDAA0800B8E6C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0442830218FDAA0800B8E6C1 /* ButlerTests-Info.plist */,
+				0442830318FDAA0800B8E6C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0442831018FDAA1A00B8E6C1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0442831518FDAD5000B8E6C1 /* iPad-ViewController.xib */,
+				0442831318FDAD2800B8E6C1 /* iPhone-ViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044282DD18FDAA0800B8E6C1 /* Butler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0442830A18FDAA0800B8E6C1 /* Build configuration list for PBXNativeTarget "Butler" */;
+			buildPhases = (
+				AD90D1E45CEE45B08C6018BB /* Check Pods Manifest.lock */,
+				044282DA18FDAA0800B8E6C1 /* Sources */,
+				044282DB18FDAA0800B8E6C1 /* Frameworks */,
+				044282DC18FDAA0800B8E6C1 /* Resources */,
+				F7CD53A7CE884B2CABB75C67 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Butler;
+			productName = Butler;
+			productReference = 044282DE18FDAA0800B8E6C1 /* Butler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044282F818FDAA0800B8E6C1 /* ButlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0442830D18FDAA0800B8E6C1 /* Build configuration list for PBXNativeTarget "ButlerTests" */;
+			buildPhases = (
+				044282F518FDAA0800B8E6C1 /* Sources */,
+				044282F618FDAA0800B8E6C1 /* Frameworks */,
+				044282F718FDAA0800B8E6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044282FF18FDAA0800B8E6C1 /* PBXTargetDependency */,
+			);
+			name = ButlerTests;
+			productName = ButlerTests;
+			productReference = 044282F918FDAA0800B8E6C1 /* ButlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044282D618FDAA0800B8E6C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					044282F818FDAA0800B8E6C1 = {
+						TestTargetID = 044282DD18FDAA0800B8E6C1;
+					};
+				};
+			};
+			buildConfigurationList = 044282D918FDAA0800B8E6C1 /* Build configuration list for PBXProject "Butler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 044282D518FDAA0800B8E6C1;
+			productRefGroup = 044282DF18FDAA0800B8E6C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044282DD18FDAA0800B8E6C1 /* Butler */,
+				044282F818FDAA0800B8E6C1 /* ButlerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044282DC18FDAA0800B8E6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044282EC18FDAA0800B8E6C1 /* InfoPlist.strings in Resources */,
+				044282F418FDAA0800B8E6C1 /* Images.xcassets in Resources */,
+				0442831618FDAD5000B8E6C1 /* iPad-ViewController.xib in Resources */,
+				0442831418FDAD2800B8E6C1 /* iPhone-ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044282F718FDAA0800B8E6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0442830518FDAA0800B8E6C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD90D1E45CEE45B08C6018BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7CD53A7CE884B2CABB75C67 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044282DA18FDAA0800B8E6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044282F218FDAA0800B8E6C1 /* AppDelegate.m in Sources */,
+				0442831F18FDB3D800B8E6C1 /* MainViewController.m in Sources */,
+				044282EE18FDAA0800B8E6C1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044282F518FDAA0800B8E6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0442830718FDAA0800B8E6C1 /* ButlerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044282FF18FDAA0800B8E6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044282DD18FDAA0800B8E6C1 /* Butler */;
+			targetProxy = 044282FE18FDAA0800B8E6C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044282EA18FDAA0800B8E6C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044282EB18FDAA0800B8E6C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0442830318FDAA0800B8E6C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0442830418FDAA0800B8E6C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0442830818FDAA0800B8E6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0442830918FDAA0800B8E6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0442830B18FDAA0800B8E6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615EB1548F27461996EE70C7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Butler/Butler-Prefix.pch";
+				INFOPLIST_FILE = "Butler/Butler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0442830C18FDAA0800B8E6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615EB1548F27461996EE70C7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Butler/Butler-Prefix.pch";
+				INFOPLIST_FILE = "Butler/Butler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0442830E18FDAA0800B8E6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Butler.app/Butler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Butler/Butler-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ButlerTests/ButlerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0442830F18FDAA0800B8E6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Butler.app/Butler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Butler/Butler-Prefix.pch";
+				INFOPLIST_FILE = "ButlerTests/ButlerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044282D918FDAA0800B8E6C1 /* Build configuration list for PBXProject "Butler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0442830818FDAA0800B8E6C1 /* Debug */,
+				0442830918FDAA0800B8E6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0442830A18FDAA0800B8E6C1 /* Build configuration list for PBXNativeTarget "Butler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0442830B18FDAA0800B8E6C1 /* Debug */,
+				0442830C18FDAA0800B8E6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0442830D18FDAA0800B8E6C1 /* Build configuration list for PBXNativeTarget "ButlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0442830E18FDAA0800B8E6C1 /* Debug */,
+				0442830F18FDAA0800B8E6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044282D618FDAA0800B8E6C1 /* Project object */;
+}
