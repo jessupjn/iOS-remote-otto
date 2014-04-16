@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConnectionDoctor.h"
 
 @interface MainViewController : UIViewController
+{
+  IBOutlet UILabel *outputString;
+  IBOutlet UIActivityIndicatorView *spinner;
+}
+
+
 
 @end

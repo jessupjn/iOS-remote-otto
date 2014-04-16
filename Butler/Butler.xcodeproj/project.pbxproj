@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04288F4618FEF93B00AB9383 /* ConnectionDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04288F4518FEF93B00AB9383 /* ConnectionDoctor.m */; };
 		044282E218FDAA0800B8E6C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E118FDAA0800B8E6C1 /* Foundation.framework */; };
 		044282E418FDAA0800B8E6C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E318FDAA0800B8E6C1 /* CoreGraphics.framework */; };
 		044282E618FDAA0800B8E6C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044282E518FDAA0800B8E6C1 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04288F4418FEF93B00AB9383 /* ConnectionDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDoctor.h; sourceTree = "<group>"; };
+		04288F4518FEF93B00AB9383 /* ConnectionDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionDoctor.m; sourceTree = "<group>"; };
 		044282DE18FDAA0800B8E6C1 /* Butler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Butler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044282E118FDAA0800B8E6C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		044282E318FDAA0800B8E6C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,6 +143,8 @@
 				044282F118FDAA0800B8E6C1 /* AppDelegate.m */,
 				0442831D18FDB3D800B8E6C1 /* MainViewController.h */,
 				0442831E18FDB3D800B8E6C1 /* MainViewController.m */,
+				04288F4418FEF93B00AB9383 /* ConnectionDoctor.h */,
+				04288F4518FEF93B00AB9383 /* ConnectionDoctor.m */,
 				0442831018FDAA1A00B8E6C1 /* ViewControllers */,
 				0442832618FDE87400B8E6C1 /* DeviceTableCell */,
 				044282F318FDAA0800B8E6C1 /* Images.xcassets */,
@@ -325,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04288F4618FEF93B00AB9383 /* ConnectionDoctor.m in Sources */,
 				044282F218FDAA0800B8E6C1 /* AppDelegate.m in Sources */,
 				0442831F18FDB3D800B8E6C1 /* MainViewController.m in Sources */,
 				044282EE18FDAA0800B8E6C1 /* main.m in Sources */,

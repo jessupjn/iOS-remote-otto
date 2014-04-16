@@ -15,12 +15,18 @@
 
 @implementation MainViewController
 
+
+
+
 // ================================================================================
-//                            WIT - VOICE RETURN CALL
+//                            WIT METHODS
 // ================================================================================
 
 - (void)witDidGraspIntent:(NSString *)intent entities:(NSDictionary *)entities body:(NSString *)body error:(NSError *)e
 {
+  [spinner stopAnimating];
+  [outputString setText:[NSString stringWithFormat:@"Intent: %@", intent]];
+
   if (e) {
     NSLog(@"[Wit] error: %@", [e localizedDescription]);
     return;
@@ -29,6 +35,14 @@
   NSLog(@"%@", [NSString stringWithFormat:@"intent = %@", intent]);
   
 }
+-(void)witDidStopRecording
+{
+  [spinner startAnimating];
+}
+
+
+
+
 
 
 // ================================================================================
@@ -70,6 +84,10 @@
 
 
 
+
+
+
+
 // ================================================================================
 //                              ViewDidLoad
 // ================================================================================
@@ -89,8 +107,10 @@
   [[self.view viewWithTag:1] addSubview:witButton];
   [[self.view viewWithTag:1] bringSubviewToFront:[self.view viewWithTag:2]];
   [[self.view viewWithTag:2].layer setBorderWidth:1];
-  [[self.view viewWithTag:2].layer setBorderColor:[UIColor darkGrayColor].CGColor];
+  [[self.view viewWithTag:2].layer setBorderColor:[UIColor blackColor].CGColor];
   
+  [outputString setText:@""];
+
   
   
   UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self
