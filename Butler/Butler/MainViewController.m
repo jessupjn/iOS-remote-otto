@@ -54,11 +54,26 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 1;
+  return [listOfDevices count];
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-  return @"Status of Devices";
+  UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 18)];
+  /* Create custom view to display section header... */
+  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 3, tableView.frame.size.width, 13)];
+  [label setFont:[UIFont boldSystemFontOfSize:15]];
+  [label setText:@"Status of Devices"];
+  
+  UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+  [button addTarget:self action:@selector(addDeviceButton) forControlEvents:UIControlEventTouchUpInside];
+  [button setTitle:@"Add" forState:UIControlStateNormal];
+  [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
+  button.frame = CGRectMake(tableView.frame.size.width-35, 5, 30, 13);
+  
+  [view addSubview:button];
+  [view addSubview:label];
+  [view setBackgroundColor:[UIColor colorWithRed:166/255.0 green:177/255.0 blue:186/255.0 alpha:1.0]]; //your background color...
+  return view;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -126,6 +141,7 @@
   UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                action:@selector(swipeRight)];
   [[self.view viewWithTag:2] addGestureRecognizer:tapGesture];
+  
 }
 
 
@@ -167,4 +183,9 @@
   }];
 }
 
+
+-(void)addDeviceButton
+{
+  
+}
 @end

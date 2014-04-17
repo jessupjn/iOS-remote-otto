@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
 
-@interface ConnectionDoctor : NSObject
+@interface ConnectionDoctor : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate, NSURLConnectionDownloadDelegate>
+{
+  NSMutableData *receivedData;
+}
+
+-(void) makeAPIRequest:(NSString *)msg;
+
 
 @end

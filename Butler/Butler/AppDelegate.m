@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
 
 @implementation AppDelegate
@@ -15,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  
+  // AFNetworking Activity Manager is now enabled.
+  [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
   
   // WIT instantiation
   [Wit sharedInstance].accessToken = @"ZKVSTYO5Y4B5XXXRAOT6IT74JZTDRLN7";

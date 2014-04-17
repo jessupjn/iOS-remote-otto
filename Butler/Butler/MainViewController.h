@@ -13,8 +13,9 @@
 {
   IBOutlet UILabel *outputString;
   IBOutlet UIActivityIndicatorView *spinner;
+  
+  NSMutableArray *listOfDevices;
 }
-
 
 
 @end
