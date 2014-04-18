@@ -25,7 +25,6 @@
 - (void)witDidGraspIntent:(NSString *)intent entities:(NSDictionary *)entities body:(NSString *)body error:(NSError *)e
 {
   [spinner stopAnimating];
-  [outputString setText:[NSString stringWithFormat:@"Intent: %@", intent]];
 
   if (e) {
     NSLog(@"[Wit] error: %@", [e localizedDescription]);
@@ -33,6 +32,16 @@
   }
   
   NSLog(@"%@", [NSString stringWithFormat:@"intent = %@", intent]);
+  NSString *str = [NSString stringWithFormat:@"Intent: %@", intent];
+  if([intent isEqualToString:@"devices"] )
+  {
+    str = [str stringByAppendingString:[NSString stringWithFormat:@"\nDevice: %@", entities[@"device"][@"value"]]];
+  }
+  if( [entities[@"device"][@"value"] isEqualToString:@"comcast_cable"] )
+    str = [str stringByAppendingString:[NSString stringWithFormat:@"\nValue: %@", entities[@"desired_value"][@"value"]]];
+
+  [outputString setText:str];
+
   
 }
 -(void)witDidStopRecording

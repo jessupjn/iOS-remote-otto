@@ -36,7 +36,7 @@ static const CGFloat kMicMargin = 40.0f;
     self.outerCircleView.opaque = NO;
     self.outerCircleView.backgroundColor = nil;
     self.outerCircleView.strokeColor = strokeColor;
-    self.outerCircleView.fillColor = [UIColor colorWithRed:0.0f/255 green:0.0f/255 blue:0.0f/255 alpha:0.25f];
+    self.outerCircleView.fillColor = [UIColor colorWithRed:0.0f/255 green:0.0f/255 blue:0.0f/255 alpha:0.20f];
     self.outerCircleView.lineWidth = lineWidth;
     
     // inner circle
@@ -45,7 +45,7 @@ static const CGFloat kMicMargin = 40.0f;
     self.innerCircleView.backgroundColor = nil;
     self.innerCircleView.strokeColor = strokeColor;
     self.innerCircleView.lineWidth = lineWidth;
-    self.innerCircleView.fillColor = [UIColor colorWithRed:0.0f/255 green:0.0f/255 blue:0.0f/255 alpha:0.25f];
+    self.innerCircleView.fillColor = [UIColor colorWithRed:0.0f/255 green:0.0f/255 blue:0.0f/255 alpha:0.20f];
     
     // microphone mask
     // try to find image in mainBundle (CocoaPods), then frameworkBundle (.framework)
