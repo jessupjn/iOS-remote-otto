@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
 
-@interface ConnectionDoctor : NSObject <NSURLConnectionDelegate, NSURLConnectionDataDelegate, NSURLConnectionDownloadDelegate>
-{
-  NSMutableData *receivedData;
-}
+@interface ConnectionDoctor : NSObject
+
 
 -(void) makeAPIRequest:(NSString *)msg;
 

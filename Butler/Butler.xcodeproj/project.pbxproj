@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		04288F4418FEF93B00AB9383 /* ConnectionDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDoctor.h; sourceTree = "<group>"; };
 		04288F4518FEF93B00AB9383 /* ConnectionDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionDoctor.m; sourceTree = "<group>"; };
-		044282DE18FDAA0800B8E6C1 /* Butler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Butler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044282DE18FDAA0800B8E6C1 /* Chives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044282E118FDAA0800B8E6C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		044282E318FDAA0800B8E6C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		044282E518FDAA0800B8E6C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -67,6 +67,7 @@
 		0442832218FDB93900B8E6C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0442832418FDB94800B8E6C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0442832718FDF38700B8E6C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04E70B27193EB6C9007A53E9 /* Butler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Butler-Bridging-Header.h"; sourceTree = "<group>"; };
 		615EB1548F27461996EE70C7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D54E3967537A4CC280958A72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,7 +115,7 @@
 		044282DF18FDAA0800B8E6C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				044282DE18FDAA0800B8E6C1 /* Butler.app */,
+				044282DE18FDAA0800B8E6C1 /* Chives.app */,
 				044282F918FDAA0800B8E6C1 /* ButlerTests.xctest */,
 			);
 			name = Products;
@@ -149,6 +150,7 @@
 				0442832618FDE87400B8E6C1 /* DeviceTableCell */,
 				044282F318FDAA0800B8E6C1 /* Images.xcassets */,
 				044282E818FDAA0800B8E6C1 /* Supporting Files */,
+				04E70B27193EB6C9007A53E9 /* Butler-Bridging-Header.h */,
 			);
 			path = Butler;
 			sourceTree = "<group>";
@@ -217,7 +219,7 @@
 			);
 			name = Butler;
 			productName = Butler;
-			productReference = 044282DE18FDAA0800B8E6C1 /* Butler.app */;
+			productReference = 044282DE18FDAA0800B8E6C1 /* Chives.app */;
 			productType = "com.apple.product-type.application";
 		};
 		044282F818FDAA0800B8E6C1 /* ButlerTests */ = {
@@ -453,10 +455,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Butler/Butler-Prefix.pch";
 				INFOPLIST_FILE = "Butler/Butler-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Chives;
+				SWIFT_OBJC_BRIDGING_HEADER = "Butler/Butler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -467,10 +473,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Butler/Butler-Prefix.pch";
 				INFOPLIST_FILE = "Butler/Butler-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Chives;
+				SWIFT_OBJC_BRIDGING_HEADER = "Butler/Butler-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -17,5 +17,7 @@
   NSMutableArray *listOfDevices;
 }
 
+@property(strong,nonatomic) ConnectionDoctor *connectionDoctor;
+
 
 @end
