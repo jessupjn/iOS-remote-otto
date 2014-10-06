@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044876FA19E30C5D006A6423 /* TVRemote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044876F919E30C5D006A6423 /* TVRemote.xib */; };
 		04B571A519DC705D002C19BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B571A419DC705D002C19BE /* Images.xcassets */; };
 		04B571B419DC705D002C19BE /* ChivesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B571B319DC705D002C19BE /* ChivesTests.swift */; };
 		04B571C219DC70F3002C19BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B571BE19DC70F3002C19BE /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044876F919E30C5D006A6423 /* TVRemote.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVRemote.xib; sourceTree = "<group>"; };
 		04B5719819DC705D002C19BE /* Chives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B5719C19DC705D002C19BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B571A419DC705D002C19BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044876F819E30C3C006A6423 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				044876F919E30C5D006A6423 /* TVRemote.xib */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
 		04B5718F19DC705D002C19BE = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 				04B571C119DC70F3002C19BE /* MainViewController.swift */,
 				04B571D419DC721C002C19BE /* Libraries */,
 				04B571CF19DC7178002C19BE /* ViewControllers */,
+				044876F819E30C3C006A6423 /* CustomViews */,
 				04B571D319DC71D2002C19BE /* Extensions */,
 				04B571A419DC705D002C19BE /* Images.xcassets */,
 				04B5719B19DC705D002C19BE /* Supporting Files */,
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B571A519DC705D002C19BE /* Images.xcassets in Resources */,
+				044876FA19E30C5D006A6423 /* TVRemote.xib in Resources */,
 				04B571E919DC7A13002C19BE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +469,7 @@
 				04B571B919DC705D002C19BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04B571BA19DC705D002C19BE /* Build configuration list for PBXNativeTarget "ChivesTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +478,7 @@
 				04B571BC19DC705D002C19BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
