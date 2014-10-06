@@ -10,20 +10,33 @@ import Foundation
 
 class RemoteVC : UIViewController
 {
-    @IBOutlet var imvHeaderImg : UIImageView!
-    @IBOutlet var lblHeader : UILabel!
+    @IBOutlet var scvButtonList : UIScrollView!
+    @IBOutlet var lblDeviceName : UILabel!
+    @IBOutlet var lblDeviceStatus : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imvHeaderImg.image = imvHeaderImg.image?.changeImageColor(UIColor.whiteColor())
-        lblHeader.font = UIFont(name: "AvenirNextCondensed-UltraLight", size: 35)
-
+        
+        
     }
     
     @IBAction func btnActionMenuOpen(sender : AnyObject)
     {
         (self.parentViewController! as MainViewController).callout!.show();
+    }
+    
+    func rebuildRemoteWithType(name:NSString, type : NSString)
+    {
+        
+        switch(type.lowercaseString)
+        {
+            case "tv":
+                
+                break;
+            default:
+                break;
+        }
     }
     
 }
